@@ -1,0 +1,15 @@
+# Ingenting med hemligheter får någonsin hamna här. En nyckel som committats en gång
+# ligger kvar i historiken även om filen tas bort — den måste roteras, inte raderas.
+.env
+.env.*
+*.key
+*.pem
+secrets/
+kansligt/
+
+# Skräp
+.DS_Store
+Thumbs.db
+node_modules/
+.vscode/
+.idea/
