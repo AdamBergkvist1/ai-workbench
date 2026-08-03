@@ -27,6 +27,46 @@ anledningen till att man slutar fånga saker.
 
 ---
 
+## Vad Claude faktiskt kommer åt från en länk
+
+**Testat skarpt 2026-08-03**, inte antaget:
+
+| Källa | Vad som går att hämta | Vad som INTE går |
+|---|---|---|
+| **TikTok** (direkthämtning) | Ingenting alls | Allt |
+| **TikTok** (riktig webbläsare) | Konto, bildtext, hashtags, antal likes | Talat innehåll. Kommentarer ligger bakom en bot-kontroll som Claude inte får kringgå |
+| **YouTube** (direkthämtning) | Titeln | Beskrivning, transkript |
+| **GitHub-repo, dokumentation, blogg** | I princip allt | — |
+
+## Det här förändrar arbetsordningen — till det bättre
+
+**Videon är sällan källan. Verktyget är källan.**
+
+En länk räcker nästan alltid för att få fram *namnet* på det som diskuteras. Och när namnet
+är känt går Claude till den riktiga källan — repot, dokumentationen — som är både utförligare
+och mer aktuell än videon.
+
+**Bevis från första dagen:** Chris-videon sa "det finns något som heter remote control och
+det är användbart". Dokumentationen gav de exakta inställningarna *och* tre begränsningar som
+videon aldrig nämnde — att datorn måste vara påslagen, att sessionen dör efter ~10 minuter
+utan nät, och att behörighetsfrågor inte går att kringgå. Det var begränsningarna som
+avgjorde om verktyget var användbart, och de fanns inte i videon.
+
+### Alltså:
+
+1. **Länken ensam räcker oftast.** Claude identifierar vad det handlar om och läser sedan
+   den verkliga källan.
+2. **Transkript behövs bara när videon innehåller ett argument som inte finns i
+   dokumentationen** — en jämförelse, en erfarenhet, ett omdöme. Exempel: Chris påstående
+   att Greptile slog Bugbot över 60 PR:er. Det står ingenstans i någon dokumentation.
+3. **Om transkript behövs:** YouTube har "Visa transkription" under videon — markera, kopiera,
+   klistra in. TikTok har ingen sådan funktion; där får jag skriva några meningar om vad
+   som sades, eller använda undertexterna.
+
+Regeln blir: **klistra länken, låt Claude försöka, och komplettera bara om den ber om det.**
+
+---
+
 ## Vid datorn
 
 Starta en session i valfritt projekt och säg:
@@ -36,13 +76,12 @@ Starta en session i valfritt projekt och säg:
 
 Vad som händer:
 
-1. Claude läser issuen och hämtar det den kommer åt från länken
-2. **Om det är TikTok:** transkriptet går sällan att hämta. Jag öppnar videon, kopierar
-   transkriptet manuellt (eller skriver några meningar om vad den sa) och klistrar in.
-   YouTube brukar gå att hämta direkt.
-3. Claude fyller i mallen — **inklusive fältet "passar inte för att"**, som är obligatoriskt
-4. Beslut: **Adopt** / **Park** / **Skip**
-5. Anteckningen hamnar i `tools/` eller `workflows/`, issuen stängs med en länk dit
+1. Claude läser issuen och identifierar vad länken handlar om
+2. Claude går till den **riktiga källan** — repot, dokumentationen — och läser den
+3. Claude säger till om den behöver ett transkript för att komma vidare
+4. Mallen fylls i, **inklusive fältet "passar inte för att"**, som är obligatoriskt
+5. Beslut: **Adopt** / **Park** / **Skip**
+6. Anteckningen hamnar i `tools/` eller `workflows/`, issuen stängs med en länk dit
 
 ## Varför "passar inte för att" är obligatoriskt
 
