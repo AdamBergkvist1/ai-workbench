@@ -34,3 +34,8 @@ Nycklar bor i en lösenordshanterare.
 ## Aktiva projekt
 
 - [Gym-App](projects/gym-app.md) — offline-first träningslogg (PWA), `AdamBergkvist1/Gym-App`
+
+## Verktyg i drift
+
+- [yt-dlp](tools/yt-dlp.md) — hämtar transkript från TikTok och YouTube. Verifierat 2026-08-03
+- [remote control](tools/remote-control.md) — godkänn verktygsanrop från telefonen

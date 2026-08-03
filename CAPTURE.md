@@ -33,10 +33,20 @@ anledningen till att man slutar fånga saker.
 
 | Källa | Vad som går att hämta | Vad som INTE går |
 |---|---|---|
-| **TikTok** (direkthämtning) | Ingenting alls | Allt |
-| **TikTok** (riktig webbläsare) | Konto, bildtext, hashtags, antal likes | Talat innehåll. Kommentarer ligger bakom en bot-kontroll som Claude inte får kringgå |
-| **YouTube** (direkthämtning) | Titeln | Beskrivning, transkript |
+| **TikTok / YouTube** med [`yt-dlp`](tools/yt-dlp.md) | **Hela transkriptet**, när undertexter finns | Videor utan undertexter |
+| **TikTok** (riktig webbläsare) | Konto, bildtext, hashtags, antal likes | Kommentarer — bakom en bot-kontroll som Claude inte får kringgå |
+| **TikTok / YouTube** (rå direkthämtning) | Ingenting respektive bara titeln | Allt annat |
 | **GitHub-repo, dokumentation, blogg** | I princip allt | — |
+
+**Transkriptproblemet är löst.** `yt-dlp` hämtade en TikTok-video ordagrant identiskt med
+det transkript jag tidigare kopierat för hand. Jag behöver alltså inte göra det längre —
+klistra länken, be Claude hämta.
+
+**Två saker måste fortfarande kopieras manuellt:**
+- **Kommentarerna.** De är ofta det bästa i en video — folk fyller i det skaparen hoppade
+  över. TikToks bot-kontroll stoppar automatisering, så de klistras in för hand när de
+  är värda något.
+- **Videor utan undertexter.** Sällsynt på YouTube, förekommer på TikTok.
 
 ## Det här förändrar arbetsordningen — till det bättre
 
