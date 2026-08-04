@@ -1,6 +1,10 @@
 # Analysmall för verktyg och idéer
 
-Används på allt som kommer in via `inbox`-issues. Kopiera rubrikerna rakt av.
+> 🤖 **Den här filen är för Claude, inte för mig.**
+> Ska jag lägga in en video? Läs [GUIDE.md](../GUIDE.md) i stället — den innehåller allt
+> jag behöver och ingenting mer.
+
+Claude följer denna mall när en fil ska fyllas i eller verifieras.
 
 ---
 
