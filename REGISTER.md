@@ -28,6 +28,7 @@ och vad som kom ut av det.
 | 2026-08-04 | **mem0** — minne mellan sessioner | issue #6 | ⛔ **Skip** — kontexten ÄR minnet | [tools/mem0.md](tools/mem0.md) |
 | 2026-08-04 | **Happy** — fjärrstyrning | issue #3 | ⛔ **Skip** — Remote Control gör det gratis | [tools/remote-control.md](tools/remote-control.md) |
 | 2026-08-04 | **iOS-widgets** — retention | issue #8 | ⛔ **Skip** — PWA kan inte, dörren är stängd | [tools/ios-widgets.md](tools/ios-widgets.md) |
+| 2026-08-04 | **Mobbin** — designreferens + MCP | Cole Caccamise | ⏸ **Park** — MCP kräver betald plan, metoden är gratis | [tools/mobbin.md](tools/mobbin.md) |
 
 ## Metod och idéer
 
@@ -39,6 +40,7 @@ och vad som kom ut av det.
 | 2026-08-04 | **Solo-app till första intäkten** | Cole Caccamise | 🎯 Reklamfilmstestet — in i fas 11B | [ideer/solo-app-till-intakt.md](ideer/solo-app-till-intakt.md) |
 | 2026-08-04 | **Vad en AI-agent faktiskt är** | issue #5 | En loop plus verktyg. Resten är marknadsföring | [ideer/ai-agent-som-loop.md](ideer/ai-agent-som-loop.md) |
 | 2026-08-04 | **CS-karriär, sexmånadersplan** | issue #9 | Ingen åtgärd. Projekt slår certifikat | [ideer/ingenjorskarriar-roadmap.md](ideer/ingenjorskarriar-roadmap.md) |
+| 2026-08-04 | **Se appen, beskriv den inte** | egen lärdom | Regel för alla projekt med gränssnitt | [rules/se-appen-sjalv.md](rules/se-appen-sjalv.md) |
 
 ## Inkorg — inte utredda ännu
 
