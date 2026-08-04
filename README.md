@@ -8,11 +8,13 @@ och skälet gäller mig och mina projekt, inte verktyget i allmänhet.
 
 ## Innehåll
 
-| Mapp | Vad som ligger där |
+| Fil / mapp | Vad som ligger där |
 |---|---|
+| **[REGISTER.md](REGISTER.md)** | **Allt jag sparat och vad det blev. Börja här** |
 | `rules/` | Block jag klistrar in i `CLAUDE.md` i nya projekt |
 | `workflows/` | Arbetsflöden som är körda skarpt minst en gång |
 | `tools/` | Verktygsbeslut: adopt / park / skip, med skäl |
+| `ideer/` | Det som inte är ett verktyg — metod, principer, lärande |
 | `projects/` | En fil per projekt: var det står, vad som är nästa |
 | `CAPTURE.md` | Hur jag fångar en idé från telefonen och vad som händer sen |
 | `workflows/gemini-utvardering.md` | Prompt att köra i Gemini på jobbet — faktalagret |
