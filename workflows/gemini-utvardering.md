@@ -8,13 +8,32 @@ i taget.
 
 ---
 
-## Så här gör du
+## Så här gör du — steg för steg på telefonen
 
-1. Lägg upp issuen på `ai-workbench` som vanligt (länk + en rad om varför).
-2. Öppna Gemini, klistra in prompten nedan, byt ut de två raderna längst upp.
-3. Klistra in Geminis svar som en **kommentar på issuen**.
-4. Klart. Nästa gång vi sitter vid datorn säger du bara *"gå igenom issues i ai-workbench"* —
-   Claude läser fakta som redan finns och lägger till projektdomen.
+**1. Issuen finns redan.** Du la upp den när du såg videon (länk + en rad om varför).
+
+**2. Kör prompten i Gemini.** Kopiera rutan längre ned, byt ut de två raderna längst upp,
+skicka.
+
+**3. Kopiera hela Geminis svar.**
+
+**4. Lägg det som en KOMMENTAR på issuen:**
+
+> GitHub-appen → **Issues** → tryck på issuen → rutan **"Leave a comment"** längst ned →
+> klistra in → **Comment**.
+>
+> Eller `github.com/AdamBergkvist1/ai-workbench/issues` i webbläsaren — samma sak.
+
+**5. Klart.** Stäng inte issuen. Nästa gång vi sitter vid datorn säger du bara
+*"gå igenom issues i ai-workbench"*.
+
+### ⚠️ Kommentar — inte redigera issuens text
+
+Originaltexten är **din** fångst: vad du såg och varför du reagerade. Det är signal, och den
+ska stå kvar orörd. Gemini-svaret är ett **lager ovanpå**.
+
+Skriver du över originalet försvinner det enda som säger varför saken var intressant för dig
+från början — och det är ofta viktigare än vad verktyget tekniskt är.
 
 **Du behöver inte göra detta för alla issues.** Bara de du är nyfiken på. En issue utan
 Gemini-kommentar fungerar precis som förut.
@@ -39,7 +58,10 @@ GÖR SÅ HÄR FÖRST:
 2. Leta upp det officiella repot eller den officiella sidan, och svara utifrån DEN.
    Inte utifrån videon.
 
-SVARA MED EXAKT DESSA RUBRIKER, KORT:
+SVARA MED EXAKT DETTA FORMAT, KORT. Börja med rubrikraden nedan, ordagrant, så att
+svaret går att känna igen när det klistras in i ett register:
+
+## Faktautvärdering (Gemini)
 
 **Namn och länk**
 **Vad det är** — en mening
@@ -76,6 +98,26 @@ REGLER:
 
 Räcker inte det spelar det ingen roll — Claude kan hämta transkriptet med `yt-dlp` vid
 datorn. **Gemini-steget är en genväg, inte ett krav.**
+
+---
+
+## Om formatet — och vad som händer om Gemini inte lyder
+
+Prompten ber om **exakta rubriker** i fetstil, vilket renderas rätt i en GitHub-kommentar.
+Första raden är alltid `## Faktautvärdering (Gemini)` — den finns där så att jag direkt ser
+att det är Geminis fakta och inte din egen anteckning.
+
+**Men lyd inte formatet slaviskt.** Hoppar Gemini över en rubrik, svarar på engelska, eller
+skriver rakt text i stället för rubriker — **klistra in det ändå.** Jag läser det oavsett.
+
+Formatet finns av två skäl, och inget av dem är strikthet:
+
+1. **Rubrikerna tvingar Gemini att svara på allt.** Utan `**Licens**` som egen rad hoppas den
+   ofta över — och licensen är det som avgör om vi ens får röra koden.
+2. **Du ska kunna skumma det på telefonen** utan att läsa ett stycke löptext.
+
+Saknas något viktigt fyller jag i det vid datorn. **Ett ofullständigt svar är oändligt mycket
+bättre än inget svar** — och långt bättre än ett komplett svar som är gissat.
 
 ---
 
