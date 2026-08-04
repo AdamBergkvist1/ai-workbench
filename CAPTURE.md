@@ -77,6 +77,19 @@ Regeln blir: **klistra länken, låt Claude försöka, och komplettera bara om d
 
 ---
 
+## Mellansteg (valfritt) — utvärdera i Gemini på jobbet
+
+Är du nyfiken på något direkt: kör prompten i [`workflows/gemini-utvardering.md`](workflows/gemini-utvardering.md)
+och klistra svaret som en **kommentar på issuen**.
+
+Gemini gör **faktalagret** — namn, licens, kostnad, stack, begränsningar. Claude gör
+**projektdomen** vid datorn. Uppdelningen står i `workflows/analysmall.md`: fakta gäller
+alla projekt, domen gäller ett i taget.
+
+**Helt valfritt.** En issue utan Gemini-kommentar fungerar precis som förut.
+
+---
+
 ## Vid datorn
 
 Starta en session i valfritt projekt och säg:

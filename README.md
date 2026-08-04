@@ -15,6 +15,7 @@ och skälet gäller mig och mina projekt, inte verktyget i allmänhet.
 | `tools/` | Verktygsbeslut: adopt / park / skip, med skäl |
 | `projects/` | En fil per projekt: var det står, vad som är nästa |
 | `CAPTURE.md` | Hur jag fångar en idé från telefonen och vad som händer sen |
+| `workflows/gemini-utvardering.md` | Prompt att köra i Gemini på jobbet — faktalagret |
 
 ## Den enda regel som håller det här levande
 
