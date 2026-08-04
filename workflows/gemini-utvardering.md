@@ -43,14 +43,29 @@ Gemini-kommentar fungerar precis som förut.
 ## Prompten — kopiera allt i rutan
 
 ```
-Du utvärderar ett verktyg som nämns i en video. Jag samlar sådana utvärderingar i ett
-eget register och fattar besluten själv senare. Din uppgift är att ta fram FAKTA,
+Du utvärderar innehållet i en video. Jag samlar sådana utvärderingar i ett eget
+register och fattar besluten själv senare. Din uppgift är att ta fram FAKTA,
 inte att rekommendera.
 
 VIDEO: <klistra länken här>
 BILDTEXT OCH KOMMENTARER: <klistra in det som står under videon, om något>
 
-GÖR SÅ HÄR FÖRST:
+STEG 0 — AVGÖR FÖRST VAD VIDEON FAKTISKT HANDLAR OM.
+Titta på videons titel och innehåll. Den handlar kanske inte om ett verktyg alls.
+
+  A) Handlar den om ett VERKTYG  → fortsätt till steg 1, använd VERKTYGSMALLEN.
+  B) Handlar den om en METOD, ETT ARBETSSÄTT eller EN ERFARENHET
+     → hoppa över verktygsmallen, använd METODMALLEN längst ned.
+
+⚠️ SPONSRAT INNEHÅLL ÄR INTE VIDEONS ÄMNE.
+Nämns ett verktyg bara i ett reklamavbrott — "...who is a sponsor of this video",
+"tack till X som sponsrar" — så är det INTE det videon handlar om. Utvärdera då
+videons faktiska ämne, och skriv en rad: "Videon sponsras av X men handlar om Y."
+
+Kan du inte se videons innehåll: säg det rakt ut i stället för att gissa utifrån
+titeln.
+
+GÖR SEDAN DETTA (bara om det är ett verktyg):
 1. Ta reda på vad verktyget FAKTISKT heter. Uppläsning och automatiska undertexter
    förvränger namn — "memo" visade sig till exempel vara "mem0". Sök på
    beskrivningen av vad det gör, inte på hur namnet lät. Hittar du inte namnet
@@ -76,7 +91,23 @@ svaret går att känna igen när det klistras in i ett register:
   inte sådant som bara gäller mig
 **Vem det är byggt för** — och vem det inte är byggt för
 
-REGLER:
+─────────────────────────────────────────────────────────────
+METODMALLEN — använd denna i stället om videon handlar om ett
+arbetssätt, en erfarenhet eller en idé i stället för ett verktyg:
+
+## Faktautvärdering (Gemini)
+
+**Vad videon handlar om** — en mening
+**Vem som säger det** — namn, och vad personen faktiskt har gjort
+**Påståendena** — punktlista, de konkreta råden. Inga omskrivningar
+**Vad som är belagt** — siffror, resultat, sådant som går att kontrollera
+**Vad som är enbart påstått** — det som låter konkret men inte har någon grund
+**Förutsättningar rådet bygger på** — vad måste vara sant om läsaren för att det
+  ska gälla? (t.ex. "har betalande användare", "bygger native iOS", "söker jobb")
+**Vad som talar emot** — minst en sak. Obligatoriskt
+─────────────────────────────────────────────────────────────
+
+REGLER (gäller båda mallarna):
 - Gissa aldrig. Vet du inte, skriv "vet inte". Ett osäkert svar som ser säkert ut
   är sämre än inget svar.
 - Ge INGEN rekommendation. Säg inte om jag borde använda det. Du känner inte mina

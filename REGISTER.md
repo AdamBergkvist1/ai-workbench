@@ -27,6 +27,7 @@ och vad som kom ut av det.
 | 2026-08-03 | **cmux** — många sessioner | Chris Raroque | ⛔ **Skip** — löser problem jag inte har | [tools/greptile-och-cmux.md](tools/greptile-och-cmux.md) |
 | 2026-08-04 | **mem0** — minne mellan sessioner | issue #6 | ⛔ **Skip** — kontexten ÄR minnet | [tools/mem0.md](tools/mem0.md) |
 | 2026-08-04 | **Happy** — fjärrstyrning | issue #3 | ⛔ **Skip** — Remote Control gör det gratis | [tools/remote-control.md](tools/remote-control.md) |
+| 2026-08-04 | **iOS-widgets** — retention | issue #8 | ⛔ **Skip** — PWA kan inte, dörren är stängd | [tools/ios-widgets.md](tools/ios-widgets.md) |
 
 ## Metod och idéer
 
@@ -35,16 +36,20 @@ och vad som kom ut av det.
 | 2026-08-03 | **De fem dokumenten** — PRD, TDD, appflöde, designbrief, schema | Arnie Verma | Avslöjade att `DESIGN.md` saknades — det som blockerade fas 11B | [rules/fem-dokument.md](rules/fem-dokument.md) |
 | 2026-08-03 | **Open source först** | Strange Advanced Marketing | Blev `CLAUDE.md` §7 i Gym-App | [rules/open-source-first.md](rules/open-source-first.md) |
 | 2026-08-03 | **PR-granskningsloopen** | Chris Raroque | Loopa tills inget verkligt återstår | [workflows/pr-review-loop.md](workflows/pr-review-loop.md) |
+| 2026-08-04 | **Solo-app till första intäkten** | Cole Caccamise | 🎯 Reklamfilmstestet — in i fas 11B | [ideer/solo-app-till-intakt.md](ideer/solo-app-till-intakt.md) |
+| 2026-08-04 | **Vad en AI-agent faktiskt är** | issue #5 | En loop plus verktyg. Resten är marknadsföring | [ideer/ai-agent-som-loop.md](ideer/ai-agent-som-loop.md) |
+| 2026-08-04 | **CS-karriär, sexmånadersplan** | issue #9 | Ingen åtgärd. Projekt slår certifikat | [ideer/ingenjorskarriar-roadmap.md](ideer/ingenjorskarriar-roadmap.md) |
 
 ## Inkorg — inte utredda ännu
 
-| Issue | Vad | Notering |
+| Issue | Vad | Blockerat av |
 |---|---|---|
-| [#4](https://github.com/AdamBergkvist1/ai-workbench/issues/4) | Understand anything | 🕓 |
-| [#5](https://github.com/AdamBergkvist1/ai-workbench/issues/5) | How to build an ai employee | 🕓 |
-| [#8](https://github.com/AdamBergkvist1/ai-workbench/issues/8) | Use widgets to keep users | 🕓 Misstanke: går inte i en PWA |
-| [#9](https://github.com/AdamBergkvist1/ai-workbench/issues/9) | Tips för att lyckas som ingenjör | 🕓 Idé, inte verktyg |
-| [#10](https://github.com/AdamBergkvist1/ai-workbench/issues/10) | Billiga sidor för ett projekt | 🕓 |
+| [#4](https://github.com/AdamBergkvist1/ai-workbench/issues/4) | Understand anything | 🔎 **Kunde inte identifieras.** Videon säger "open source prompt framework", men ingen sökning hittar ett matchande repo. Behöver namnet eller länken |
+| [#10](https://github.com/AdamBergkvist1/ai-workbench/issues/10) | Billiga sidor för ett projekt | 🔇 **Videon saknar undertexter** och issuen har ingen beskrivning. Behöver en rad om vad den handlade om |
+
+**Båda är öppna av ärlighet, inte av lättja.** En gissad analys hade sett likadan ut som en
+riktig — och det är precis felet som fick Gemini att utvärdera en sponsor i stället för en
+video.
 
 ---
 
