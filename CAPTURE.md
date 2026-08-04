@@ -77,10 +77,12 @@ Regeln blir: **klistra länken, låt Claude försöka, och komplettera bara om d
 
 ---
 
-## Mellansteg (valfritt) — utvärdera i Gemini på jobbet
+## Mellansteg (valfritt) — utvärdera i Gemini
 
-Är du nyfiken på något direkt: kör prompten i [`workflows/gemini-utvardering.md`](workflows/gemini-utvardering.md)
-och klistra svaret som en **kommentar på issuen**.
+Kör prompten i [`workflows/gemini-utvardering.md`](workflows/gemini-utvardering.md).
+
+**Sitter du vid datorn: klistra svaret rakt in i Claude-chatten. Ingen issue behövs.**
+**Är du på telefonen: klistra det som en kommentar på issuen.**
 
 Gemini gör **faktalagret** — namn, licens, kostnad, stack, begränsningar. Claude gör
 **projektdomen** vid datorn. Uppdelningen står i `workflows/analysmall.md`: fakta gäller

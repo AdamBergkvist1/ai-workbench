@@ -8,35 +8,55 @@ i taget.
 
 ---
 
-## Så här gör du — steg för steg på telefonen
+## Det finns två lägen. Välj efter var du är.
 
-**1. Issuen finns redan.** Du la upp den när du såg videon (länk + en rad om varför).
+---
 
-**2. Kör prompten i Gemini.** Kopiera rutan längre ned, byt ut de två raderna längst upp,
-skicka.
+# 🖥️ Läge A — du sitter vid datorn
 
-**3. Kopiera hela Geminis svar.**
+**Detta är det vanliga. Ingen issue, ingen GitHub, inget krångel.**
 
-**4. Lägg det som en KOMMENTAR på issuen:**
+1. **Kör prompten i Gemini** (rutan längre ned). Byt ut länkraden.
+2. **Kopiera hela svaret.**
+3. **Klistra in det i Claude-chatten.** Säg typ *"här är Geminis analys, lägg in den"*.
+4. Klart. Claude skriver filen i `tools/` eller `ideer/` och lägger till raden i
+   `REGISTER.md`.
 
-> GitHub-appen → **Issues** → tryck på issuen → rutan **"Leave a comment"** längst ned →
-> klistra in → **Comment**.
->
-> Eller `github.com/AdamBergkvist1/ai-workbench/issues` i webbläsaren — samma sak.
+**Du behöver inte skapa någon issue.** Issues finns för när du *inte* kan prata med Claude.
+Sitter du redan här är de bara ett extra steg.
 
-**5. Klart.** Stäng inte issuen. Nästa gång vi sitter vid datorn säger du bara
-*"gå igenom issues i ai-workbench"*.
+> **Vill du hoppa över Gemini helt?** Ge bara länken till Claude direkt. Den hämtar
+> transkriptet med `yt-dlp` och gör hela analysen. Gemini-steget finns enbart för att spara
+> Claude-usage — inte för att det ger ett bättre resultat.
+
+---
+
+# 📱 Läge B — du är på jobbet eller ute
+
+**Här behövs GitHub, eftersom Claude inte är med.**
+
+1. **Lägg upp issuen** när du ser videon: länk + en rad om varför du reagerade.
+2. **Kör prompten i Gemini** när du har en lucka.
+3. **Klistra svaret som en KOMMENTAR på issuen:**
+   > GitHub-appen → **Issues** → tryck på issuen → rutan **"Leave a comment"** längst ned →
+   > klistra in → **Comment**
+4. **Stäng inte issuen.** Vid datorn säger du *"gå igenom issues i ai-workbench"*.
 
 ### ⚠️ Kommentar — inte redigera issuens text
 
-Originaltexten är **din** fångst: vad du såg och varför du reagerade. Det är signal, och den
-ska stå kvar orörd. Gemini-svaret är ett **lager ovanpå**.
+Originaltexten är **din** fångst: vad du såg och varför du reagerade. Skriver du över den
+försvinner det enda som förklarar varför saken var intressant från början — och det är ofta
+viktigare än vad verktyget tekniskt är. Gemini-svaret är ett **lager ovanpå**.
 
-Skriver du över originalet försvinner det enda som säger varför saken var intressant för dig
-från början — och det är ofta viktigare än vad verktyget tekniskt är.
+---
 
-**Du behöver inte göra detta för alla issues.** Bara de du är nyfiken på. En issue utan
-Gemini-kommentar fungerar precis som förut.
+## Sammanfattat
+
+| Var du är | Vad du gör med Geminis svar |
+|---|---|
+| **Vid datorn** | Klistra in det i Claude-chatten. Punkt |
+| **På telefonen** | Klistra in det som kommentar på issuen |
+| **Osäker** | Klistra in det i chatten. Det fungerar alltid |
 
 ---
 
