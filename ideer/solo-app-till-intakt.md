@@ -81,6 +81,53 @@ utifrån historiken. Värd att titta på igen om `12.7` (personligt anpassat 1RM
 
 ---
 
+## Ur kommentarsfältet — om att våga lansera, och om säkerhet
+
+En tittare frågade Cole om han är nervös inför lansering: han har byggt en sajt med Claude och
+Cursor, den fungerar, men han vågar inte släppa den — särskilt med en AI-funktion inbyggd,
+och han oroar sig för säkerhet och persondata.
+
+**Coles svar, sammanfattat:**
+
+> Jag oroar mig mer för att det **inte kommer finnas några användare som kan ha sönder den**.
+>
+> Persondata är viktigt att tänka på. Men så länge du krypterar eller helt enkelt inte lagrar
+> särskilt känsliga saker, och ser till att **ingen kan begära åtkomst till en resurs de inte
+> äger utan att vara inloggad**, är det mesta löst.
+>
+> Sätt **tak på hur mycket AI-krediter som kan spenderas** om något blir fel. Be Claude sätta
+> upp rate limiting på varje AI-endpoint. Det är värt att **cacha svaret om samma fråga
+> ställs igen**.
+>
+> Men övertänk det inte. Du klarar dig antagligen fint med att bara lansera. **Min största
+> ånger är att jag väntade för länge med att släppa mina saker.**
+
+### Varför det är värt att spara
+
+Det här är den mest konkreta säkerhetsrådgivning jag sett i en kommentar, och den håller.
+Meningen om åtkomst — *ingen ska kunna nå en resurs de inte äger utan inloggning* — är
+precis vad RLS gör, formulerat utan jargong.
+
+**Avstämning mot Gym-App, 2026-08-04:**
+
+| Coles råd | Vårt läge |
+|---|---|
+| Ingen når data den inte äger | ✅ RLS på alla sex tabeller, verifierat 11 av 11 |
+| Lagra inte känsligt | ✅ Bara träningsdata. Inga nycklar i klienten |
+| Tak på AI-kostnad | ✅ Storleksgräns lagd 2026-08-04 |
+| **Rate limiting per endpoint** | ❌ **Saknas.** Vi har storleksgräns per anrop, men inget tak på antal anrop |
+| **Cacha samma fråga** | ❌ Saknas |
+
+De två sista är verkliga luckor. **Storleksgränsen hindrar ett stort anrop — inte tusen
+små.** Läggs som förslag efter fas 11B, tillsammans med felloggningen i `tools/sentry.md`.
+
+**Och lanseringsrådet gäller inte oss**, vilket är värt att säga rakt ut: Gym-App är en
+personlig app med en användare och är redan i produktion. "Släpp den tidigare" är inget råd
+när det inte finns någon att släppa till. Rätt motsvarighet är **att faktiskt använda den**,
+och där gäller samma sak — han byggde i sex månader utan att validera.
+
+---
+
 ## Geminis oberoende faktautvärdering (2026-08-04, efter promptfixen)
 
 Adam körde den lagade prompten på samma video. Den **träffade rätt ämne den här gången**:
