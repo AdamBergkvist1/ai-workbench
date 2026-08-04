@@ -39,3 +39,13 @@ Nycklar bor i en lösenordshanterare.
 
 - [yt-dlp](tools/yt-dlp.md) — hämtar transkript från TikTok och YouTube. Verifierat 2026-08-03
 - [remote control](tools/remote-control.md) — godkänn verktygsanrop från telefonen
+- [designskills](tools/design-skills.md) — inför fas 11B
+
+## Utrett och avfärdat
+
+- [mem0](tools/mem0.md) — Skip. Kontexten vi redan skickar ÄR minnet
+- [strix](tools/strix.md) — Park. Kör verkliga exploits, och vi har bara produktion att rikta den mot
+- [sentry](tools/sentry.md) — Park. Idén adopteras på vår befintliga utkorg i stället
+- [ntfy](tools/ntfy.md) — Adopt, ej byggd
+- [greptile och cmux](tools/greptile-och-cmux.md) — Park respektive Skip
+- [XcodeBuildMCP](tools/xcodebuild-mcp.md) — Park tills det finns en iOS-app
