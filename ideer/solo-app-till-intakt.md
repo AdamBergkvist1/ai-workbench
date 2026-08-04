@@ -81,6 +81,32 @@ utifrån historiken. Värd att titta på igen om `12.7` (personligt anpassat 1RM
 
 ---
 
+## Geminis oberoende faktautvärdering (2026-08-04, efter promptfixen)
+
+Adam körde den lagade prompten på samma video. Den **träffade rätt ämne den här gången**:
+
+> *"Videon sponsras av Higgsfield, men handlar om Cole Caccamises arbetsmetod för att bygga
+> och marknadsföra appar."*
+
+**Verifierat mot transkriptet — allt väsentligt stämmer:** $500 första månaden, MVP kring en
+kärnfunktion, Cursor, marknadsföring framför funktionsbygge efter lansering. Den fångade
+också det viktigaste förbehållet självständigt: *att influencer-marknadsföring blir en stor
+intäktskälla är enbart påstått, och han säger själv att det hittills är olönsamt.*
+
+**Två avvikelser, båda små:** Codex nämns i videon men saknas i sammanfattningen, och
+påståendet om att teknisk skuld "belyses i videons kommentarsfält" är inte kontrollerat mot
+kommentarerna.
+
+**Vad Gemini missade:** 🎯 **reklamfilmstestet.** Videons enskilt mest användbara idé finns
+inte med. Faktalagret blev korrekt men optimerade struktur framför insikt — vilket är precis
+arbetsdelningen: Gemini tar fakta, projektnyttan tas någon annanstans.
+
+**Namnet på appen är osäkert i alla källor.** Undertexterna säger *"Lift Byte"* på ett ställe
+och *"Lift Light"* på ett annat; Gemini säger *"Lift Bite"*. Tre källor, tre stavningar. Att
+ingen av dem påstår sig veta säkert är rätt hantering.
+
+---
+
 ## Felet det här avslöjade — spara det
 
 Prompten i `workflows/gemini-utvardering.md` bad Gemini utvärdera *"ett verktyg som nämns i
