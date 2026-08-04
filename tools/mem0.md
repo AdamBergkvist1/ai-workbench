@@ -8,6 +8,10 @@
 > **Notera för framtida sökningar:** transkriptet säger *"memo"*. Repot heter **`mem0`** —
 > tal-till-text renderar "mem zero" som "memo". Sök på beskrivningen, inte på ljudet.
 
+
+> **Beslutet nedan gäller Gym-App.** Fakta och begränsningar i filen är
+> projektoberoende — domen är det inte. Se `workflows/analysmall.md`.
+
 ## Vad
 Ett minneslager som låter en LLM-app minnas sina användare mellan sessioner: preferenser,
 fakta, sammanhang. Repots egen beskrivning: *"Universal memory layer for AI Agents"*.

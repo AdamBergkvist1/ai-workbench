@@ -4,6 +4,10 @@
 **Analyserad:** 2026-08-04
 **Beslut:** **Park** — men idén bakom adopteras, byggd på det vi redan har
 
+
+> **Beslutet nedan gäller Gym-App.** Fakta och begränsningar i filen är
+> projektoberoende — domen är det inte. Se `workflows/analysmall.md`.
+
 ## Vad
 Fångar krascher i produktion och visar vad användaren gjorde, vilken enhet, och exakt vilken
 rad som brast. Chris kör dessutom en daglig automation som hämtar nya kraschloggar, fixar

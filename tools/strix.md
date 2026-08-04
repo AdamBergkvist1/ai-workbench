@@ -8,6 +8,10 @@
 > ⏰ **Villkor för att ta upp igen:** när appen har användare utöver Adam **OCH** det finns en
 > separat testmiljö att rikta den mot. Båda villkoren, inte det ena.
 
+
+> **Beslutet nedan gäller Gym-App.** Fakta och begränsningar i filen är
+> projektoberoende — domen är det inte. Se `workflows/analysmall.md`.
+
 ## Vad
 AI-agenter som analyserar koden, **kör verkliga exploit-payloads** för att bevisa att en
 sårbarhet är på riktig, och föreslår patchar. Byggd för att ligga i en CI-pipeline.

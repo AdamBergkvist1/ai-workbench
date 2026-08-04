@@ -8,6 +8,10 @@ https://www.youtube.com/watch?v=9vPyxCucxqI
 > ⏰ **Villkor för att ta upp igen:** när jag börjar bygga en native iOS-app och har en Mac.
 > Påminn mig om denna fil då.
 
+
+> **Beslutet nedan gäller Gym-App.** Fakta och begränsningar i filen är
+> projektoberoende — domen är det inte. Se `workflows/analysmall.md`.
+
 ## Vad
 En gratis MCP-server (byggd av Sentry) som låter Claude Code styra Xcode och iOS-simulatorn:
 bygga appen, starta simulatorn, trycka på saker på skärmen, ta skärmdumpar och hämta loggar.

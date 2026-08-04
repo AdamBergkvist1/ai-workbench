@@ -4,6 +4,10 @@
 **Analyserad:** 2026-08-03
 **Beslut:** **Adopt** — installerad och verifierad samma dag
 
+
+> **Beslutet nedan gäller Gym-App.** Fakta och begränsningar i filen är
+> projektoberoende — domen är det inte. Se `workflows/analysmall.md`.
+
 ## Vad
 Kommandoradsverktyg som hämtar undertexter, metadata och media från tusentals sajter.
 Här används det bara för **undertexter** — videon laddas aldrig ner.

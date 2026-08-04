@@ -5,6 +5,10 @@ https://code.claude.com/docs/en/remote-control
 **Analyserad:** 2026-08-03
 **Beslut:** **Adopt**
 
+
+> **Beslutet nedan gäller Gym-App.** Fakta och begränsningar i filen är
+> projektoberoende — domen är det inte. Se `workflows/analysmall.md`.
+
 ## Vad
 Kopplar en Claude Code-session som körs **på min dator** till Claude-appen på telefonen
 eller claude.ai/code. Koden körs kvar lokalt — telefonen är bara ett fönster in i sessionen.

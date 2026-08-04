@@ -4,14 +4,48 @@ Används på allt som kommer in via `inbox`-issues. Kopiera rubrikerna rakt av.
 
 ---
 
+## ⚠️ Fakta är projektoberoende. Domen är det aldrig.
+
+**Upptäckt 2026-08-04.** De första analyserna skrevs som om arbetsbänken bara hade ett
+projekt. `mem0.md` sa rakt av "Skip" — men skälet var att Gym-App redan skickar hela
+historiken i varje anrop. **För en chatbot utan den datamodellen vore mem0 kanske rätt val.**
+Nästa projekt hade läst "Skip" och trott att frågan var avgjord.
+
+Filen ska därför ha **två lager**:
+
+| Lager | Innehåll | Gäller |
+|---|---|---|
+| **Fakta** | Vad det är, licens, kostnad, verkliga begränsningar, mätvärden | Alltid, alla projekt |
+| **Beslut per projekt** | Adopt / Park / Skip med skäl och villkor | Ett projekt i taget |
+
+En begränsning hör till Fakta bara om den gäller **oavsett** vem som använder verktyget
+("kör verkliga exploits", "kräver Python", "iOS kräver relätjänsten"). Gäller den bara oss
+("vi har ingen testmiljö") hör den till Beslut.
+
+Nya rader läggs till i beslutstabellen — **gamla rader skrivs aldrig om.** Att ett projekt
+valde bort något är information som är värd att behålla.
+
+---
+
 ## Mall
 
 ```markdown
 # <Namn>
 
 **Källa:** <länk>
+**Repo:** <url> — ⭐N · licens · språk · senast aktiv
 **Analyserad:** <ÅÅÅÅ-MM-DD>
-**Beslut:** Adopt | Park | Skip
+
+## Beslut per projekt
+
+| Projekt | Beslut | Kort skäl | Villkor för omprövning |
+|---|---|---|---|
+| Gym-App | Skip | … | … |
+
+*(Rader läggs till. Gamla skrivs aldrig om.)*
+
+---
+# FAKTA — gäller alla projekt
 
 ## Vad
 En mening. Vad är det, konkret.

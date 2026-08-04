@@ -8,6 +8,10 @@ Transkript hämtat med [`yt-dlp`](yt-dlp.md), 2026-08-04.
 
 ---
 
+
+> **Beslutet nedan gäller Gym-App.** Fakta och begränsningar i filen är
+> projektoberoende — domen är det inte. Se `workflows/analysmall.md`.
+
 ## Vad videon faktiskt påstår
 
 Transkriptet, komprimerat till fyra steg:

@@ -12,6 +12,10 @@ Två verktyg från samma video, båda avfärdade — men av olika skäl.
 > ⏰ **Villkor:** när jag har betalande användare eller jobbar i ett team som granskar
 > varandras kod.
 
+
+> **Beslutet nedan gäller Gym-App.** Fakta och begränsningar i filen är
+> projektoberoende — domen är det inte. Se `workflows/analysmall.md`.
+
 ## Vad
 AI-kodgranskning som kommenterar varje pull request automatiskt och sätter betyg 1–5.
 

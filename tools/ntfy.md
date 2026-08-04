@@ -9,6 +9,10 @@
 > som inte fanns. En hänvisning till ett dokument som saknas är värre än ingen hänvisning:
 > den ser ut som att frågan är utredd.
 
+
+> **Beslutet nedan gäller Gym-App.** Fakta och begränsningar i filen är
+> projektoberoende — domen är det inte. Se `workflows/analysmall.md`.
+
 ## Vad
 Skickar push-notiser till telefonen via ett HTTP-anrop. Open source, självhostbar, med
 **native appar för iOS och Android**.
