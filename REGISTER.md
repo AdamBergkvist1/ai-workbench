@@ -41,6 +41,7 @@ och vad som kom ut av det.
 | 2026-08-04 | **Vad en AI-agent faktiskt är** | issue #5 | En loop plus verktyg. Resten är marknadsföring | [ideer/ai-agent-som-loop.md](ideer/ai-agent-som-loop.md) |
 | 2026-08-04 | **CS-karriär, sexmånadersplan** | issue #9 | Ingen åtgärd. Projekt slår certifikat | [ideer/ingenjorskarriar-roadmap.md](ideer/ingenjorskarriar-roadmap.md) |
 | 2026-08-04 | **Se appen, beskriv den inte** | egen lärdom | Regel för alla projekt med gränssnitt | [rules/se-appen-sjalv.md](rules/se-appen-sjalv.md) |
+| 2026-10-18 | **Premiumtröskeln** — tillstånd, sömmar och fel | Tim Gabe (YouTube) | Regelblock + skillen `premium`. Komplement till `se-appen-sjalv`: den ger ögonen, den här säger vart de ska riktas | [rules/premium-troskeln.md](rules/premium-troskeln.md) |
 
 ## Inkorg — inte utredda ännu
 
